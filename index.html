@@ -1,58 +1,53 @@
-<html > 
-    <head>
-        <title>octate internship</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Instrument+Serif&family=Poppins:ital,
-        wght@0,200;1,100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-       <header>
-        <nav class="nav1">
-            <div>
-                <p>
-                    Contact :Sp Collage srinagar  
-                    phone:+91894746443
-                </p>
-            </div>
-            <div>
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-twitter"></i>
-                <a href="#">Signup</a>
-                <a href="#">Signin</a>
-</div>
-        </nav>
-        <nav class="nav2">
-            <div>
-                <img src="images/images.jpeg">
-            </div>
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Admission</a>
-                <a href="#">Courses</a>
-                <a href="#">Events</a>
-                <a href="#">Pages</a>
-                <a href="#">Students</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task List 2023</title>
 
-            </div>
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	
+	<header>
+		<h1>Task List 2023</h1>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What do you have planned?" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add task" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Tasks</h2>
 
-        </nav>
-   
-        <div class="h-text">
-            <h1>
-                <h1>WELCOME TO <SPAN> COLLEGE</SPAN></h1>
-            </h1>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut sunt minima, maiores 
-                rem labore id esse quisquam atque reiciendi</p>
-                <a href="#">Courses</a>
-                <a href="#">Learn more</a>
-            
-        </div>
-       </header>
-    </body>
+			<div id="tasks">
+
+				<div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<b+-------------------------------------------------------------------utton class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</main>
+
+	<script src="main.js"></script>
+</body>
 </html>
